@@ -29,17 +29,13 @@ python -m http.server 8000
 
 2. In a new terminal, navigate to the project root and run the tests:
 ```bash
-behave tests
-```
-
-Or run with verbose output:
-```bash
-behave tests -v
+behave tests/features/sepia_effect.feature
+behave tests/features/add_text.feature
 ```
 
 ## Test Structure
 
-- `photo_editor.feature` - Contains the test scenarios written in Gherkin syntax
+- `photo_editor_t1.feature` + `photo_editor_t2.feature` - Contains the test scenarios written in Gherkin syntax
 - `steps/photo_editor_steps.py` - Contains the step definitions (Python code)
 - `environment.py` - Contains setup and teardown hooks
 - `requirements.txt` - Lists the Python dependencies
