@@ -2,8 +2,7 @@ pipeline {
     agent any
     
     environment {
-        VENV_DIR = 'venv'
-     	PYTHON_EXE = "${WORKSPACE}\\venv\\Scripts\\python.exe"
+                PYTHON_EXE = 'C:\\Users\\Marius Rusu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe'
     }
     
     stages {
